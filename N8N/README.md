@@ -1,5 +1,20 @@
 <img width="1613" height="692" alt="image" src="https://github.com/user-attachments/assets/c7d4c7ca-1618-4033-aa10-f332483436b7" />
 
+# 🔐 Security Alert Automation Workflow
+
+This n8n workflow automates the collection, enrichment, and reporting of security alerts from multiple sources, including DFIR‑IRIS and VirusTotal. It ensures SOC teams receive timely, actionable, and well-formatted reports for rapid investigation.  
+
+**Key Features:**
+- ⚡ **Automated Alert Collection:** Fetch alerts from SOAR platforms and threat feeds.  
+- 🧠 **Enrichment & Analysis:** Aggregate IPs, check reputations, and enrich data via VirusTotal.  
+- 📝 **HTML Report Generation:** Use AI (Google Gemini) to create clean, SOC-ready reports.  
+- 📧 **Email Notifications:** Send detailed alert reports directly to SOC teams.  
+- 🔄 **Seamless Integration:** Push processed alerts back to DFIR‑IRIS for full triage and auditing.  
+
+**Purpose:**  
+Streamline security operations by connecting detection, enrichment, and reporting in a single automated workflow, improving response time and situational awareness.  
+
+
 ### 🔐 Step 1 — API Authentication Token Request
 
 **🧩 Node Name:** Generate Token  
