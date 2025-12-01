@@ -11,7 +11,15 @@ This project demonstrates a complete Security Information and Event Management (
 ## 🛡️ 1. SIEM - Winlogbeat Integration
 
 ### 🔧 Configuring Winlogbeat Output and Kibana Integration
+
 This step involves configuring the Winlogbeat agent to communicate with both Kibana and Elasticsearch. The configuration specifies the Kibana endpoint for dashboard setup and defines the Elasticsearch output where all generated logs will be transmitted securely.
+
+<img width="975" height="518" alt="image" src="https://github.com/user-attachments/assets/1498a0e3-04a6-46f3-8bf4-8d0a570f0114" />
+
+<img width="975" height="521" alt="image" src="https://github.com/user-attachments/assets/3466e81e-0ba1-4669-aa34-dd900aca2c34" />
+
+<img width="975" height="518" alt="image" src="https://github.com/user-attachments/assets/58c0ba40-39d7-4768-8b90-ffe55a0897a6" />
+
 
 **Configuration:**
 ```yaml
@@ -28,7 +36,13 @@ output.elasticsearch:
 ```
 
 ### 🚀 Starting and Testing Winlogbeat Service
+
 This step involves restarting the Winlogbeat service and verifying its configuration and connectivity. The test configuration ensures the YAML configuration is valid, while test output checks connectivity to Elasticsearch. Successful execution confirms that logs will be properly sent and indexed.
+
+<img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/c32239e3-affc-41ec-95ca-43d4dafc632f" />
+
+<img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/29dd07f9-7c11-48f6-8066-3d3e5a72be47" />
+
 
 **Commands Used:**
 ```powershell
@@ -50,7 +64,13 @@ cd "C:\Program Files\Winlogbeat"
 - Warnings about SSL/TLS verification being disabled indicate that the connection uses HTTPS without certificate validation (common in lab environments).
 
 ### 🔍 Viewing and Analyzing Logs in Kibana Discover
+
 This step involves accessing the Kibana Discover interface to view and analyze the logs collected by Winlogbeat. It allows filtering, sorting, and inspecting events such as authorization changes, sensitive privilege use, and other security-related actions. This verification ensures that logs are correctly indexed and available for monitoring.
+
+<img width="975" height="488" alt="image" src="https://github.com/user-attachments/assets/f0bd0539-b079-42b8-8647-da52902ac968" />
+
+<img width="975" height="610" alt="image" src="https://github.com/user-attachments/assets/14ee4b9f-a3e9-4ebc-a81d-8f000db66287" />
+
 
 ---
 
@@ -58,6 +78,8 @@ This step involves accessing the Kibana Discover interface to view and analyze t
 
 ### ⚙️ Configuring Fluent Bit Input and Elasticsearch Output
 This step configures Fluent Bit to read raw log files from the specified path and parse them using a defined parser. It then sends the parsed logs to Elasticsearch, specifying the host, port, credentials, and index name, ensuring proper ingestion of logs for further analysis.
+
+<img width="975" height="552" alt="image" src="https://github.com/user-attachments/assets/66160c2f-f83d-4555-9fa4-65498eba4f4a" />
 
 **Configuration:**
 ```ini
@@ -93,7 +115,10 @@ This step configures Fluent Bit to read raw log files from the specified path an
 ```
 
 ### 🧩 Creating Regex Parser in Fluent Bit
+
 This step defines a custom parser in Fluent Bit using a regular expression to extract key fields from raw log entries. It captures important information such as source and destination IPs, ports, device identifiers, policy IDs, and actions, enabling structured log indexing in Elasticsearch.
+
+<img width="975" height="143" alt="image" src="https://github.com/user-attachments/assets/eece1cd4-3fc9-43cc-8532-e59ee0f8107b" />
 
 **Configuration Used:**
 ```ini
@@ -106,6 +131,8 @@ This step defines a custom parser in Fluent Bit using a regular expression to ex
 ### ▶️ Running and Verifying Fluent Bit Service
 This step starts the Fluent Bit agent using the configured .conf file. The service initializes input (tailing log files), applies the parser, and starts output workers to send data to Elasticsearch. Logs confirm that Fluent Bit is running successfully and ready to forward structured log events.
 
+<img width="975" height="467" alt="image" src="https://github.com/user-attachments/assets/46e83da7-13e5-442e-9d90-96d35f0c2399" />
+
 **Command Used:**
 ```powershell
 # Run Fluent Bit with the specified configuration
@@ -113,20 +140,32 @@ This step starts the Fluent Bit agent using the configured .conf file. The servi
 ```
 
 ### 🧪 Manually Injecting Malware Logs into Elasticsearch via Fluent Bit
+
 In this step, raw malware detection logs from RawLog.conf are manually provided to Fluent Bit for testing and indexing. The logs are parsed using the configured parser and sent to the Elasticsearch index group2-khaled-elgohary-fluentbit. This manual insertion allows verification of parsing rules, field extraction, and correct indexing before automating log collection.
+
+<img width="975" height="520" alt="image" src="https://github.com/user-attachments/assets/de031ebe-fb45-4dfc-b6ae-b0cd7f8b6d09" />
 
 **Notes:**
 - Logs are manually inserted to test parsing and output.
 
 ### ✅ Verifying Manually Injected Logs in Kibana Discover
+
 This step involves verifying that the manually injected logs appear correctly in Kibana Discover interface, confirming successful parsing, field extraction, and indexing.
+
+<img width="975" height="520" alt="image" src="https://github.com/user-attachments/assets/f6470341-e44f-49fc-8fe4-54130ac0674d" />
+
+<img width="975" height="489" alt="image" src="https://github.com/user-attachments/assets/d8b7bd69-35d4-40a6-96a3-3d77da2c6ce9" />
+
 
 ---
 
 ## ⚡ 3. SOAR - n8N Automation Platform
 
 ### 🐳 Starting n8N Docker Container
+
 This step involves starting the n8N Docker container for security orchestration and automation.
+
+<img width="975" height="185" alt="image" src="https://github.com/user-attachments/assets/fad3871c-e12a-45dd-ab06-889f8ec673e0" />
 
 ---
 
