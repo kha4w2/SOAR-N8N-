@@ -1,5 +1,8 @@
 # 🚀 SIEM Implementation Project
 
+<img width="1132" height="526" alt="image" src="https://github.com/user-attachments/assets/0537e2ca-815c-438f-9263-2520cae984d3" />
+
+
 ## 📋 Project Overview
 This project demonstrates a complete Security Information and Event Management (SIEM) solution implementation with three main components:
 1. **SIEM Log Collection** using Winlogbeat
