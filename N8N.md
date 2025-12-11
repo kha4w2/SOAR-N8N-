@@ -1,6 +1,9 @@
-<img width="1613" height="692" alt="image" src="https://github.com/user-attachments/assets/c7d4c7ca-1618-4033-aa10-f332483436b7" />
 
 # 🔐 Security Alert Automation Workflow
+
+
+<img width="1613" height="692" alt="image" src="https://github.com/user-attachments/assets/c7d4c7ca-1618-4033-aa10-f332483436b7" />
+
 
 This n8n workflow automates the collection, enrichment, and reporting of security alerts from multiple sources, including DFIR‑IRIS and VirusTotal. It ensures SOC teams receive timely, actionable, and well-formatted reports for rapid investigation.  
 
