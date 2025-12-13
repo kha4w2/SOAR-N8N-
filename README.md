@@ -10,7 +10,12 @@ This repository contains automated security workflows and integrations for SOC o
 - 📝 **Report Generation:** Produce SOC-ready HTML reports automatically using AI models.  
 - 📧 **Notifications & Escalation:** Send enriched alerts to SOC teams via email or API.  
 - 🔄 **ElasticSearch Integration:** (Planned/Future) Index and analyze alerts/events for custom dashboards and automated workflows.  
-- 🔗 **Extensible & Modular:** Designed to accommodate new workflows, nodes, and integrations seamlessly.  
+- 🔗 **Extensible & Modular:** Designed to accommodate new workflows, nodes, and integrations seamlessly.
 
+  
+- 🔒 **SOAR & SOC Automation (n8n)**
+  - Alert ingestion and enrichment
+  - Threat intelligence integrations (VirusTotal, DFIR-IRIS)
+  - Automated reporting and notifications
 **Purpose:**  
 Provide a central hub for SOC automation projects, enabling rapid investigation, improved situational awareness, and streamlined security operations.  
